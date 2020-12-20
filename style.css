@@ -40,20 +40,32 @@ body{
     display:inline-block;
 }
 
+.forms{
+    display:flex;
+}
+
 .leftHalf, .rightHalf {
     width:440px;
     display:inline-block;
 }
 
+.rightHalf{
+    
+}
+
 .left{
     text-align: right;
-    width:100px;
+    width:150px;
     display:inline-block;
 }
 
 input.right{
-    width:300px;
+    width:250px;
     display:inline-block;
+}
+
+label.left{
+    padding-bottom:20px;
 }
 
 select.right{
