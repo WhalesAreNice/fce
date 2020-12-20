@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functional Capacity Evaluation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="changeCategory('11')">
+    <h1>Functional Capacity Evaluation</h1>
+    
+    <section id="display">
+        <section id="Assessment Setup">
+            <h2>Assessment Setup</h2>
+            <section class="subCategoryNav">
+                <span class="subCategory" onClick="changeSubCategory(0)">Demographics</span>
+                <span class="subCategory" onClick="changeSubCategory(1)">Basic Diagnostics</span>
+                <span class="subCategory" onClick="changeSubCategory(2)">History</span>
+                <span class="subCategory" onClick="changeSubCategory(3)">Records Reviewed</span>
+                <span class="subCategory" onClick="changeSubCategory(4)">Present Status</span>
+                <span class="subCategory" onClick="changeSubCategory(5)">Medications</span>
+                <span class="subCategory" onClick="changeSubCategory(6)">Assessment Purpose</span>
+            </section>
+            
+            <section id="Demographics" class="Assessment Setup">
+                <h3>Demographics</h3>
+                
+                <form id="cat1SubCategory1Form">
+                    <section class="leftHalf">
+                             <label for="test" class="left">Test: </label>
+                             <input type="text" id="test" name="test" class="right"><br>
+                             <label for="test2" class="left">Test2: </label>
+                             <input type="text" id="test2" name"test2" class="right"><br>
+                             
+                    </section> <!-- end of leftHalf -->
+                    <section class="rightHalf">
+                            <label for="test" class="left">Test: </label>
+                            
+                           <select name="test" id="test" class="right">
+                               <option value=""></option>
+                               <option value="option1">option1</option>
+                               <option value="option2">option2</option>
+                               <option value="option3">option3</option>
+                               <option value="option4">option4</option>
+                           </select>
+                           <br>
+                           
+                           <label for="test2" class="left">Test2: </label>
+                           
+                           <select name="test2" id="test2" class="right">
+                               <option value=""></option>
+                               <option value="Yes">Yes</option><br>
+                               <option value="No">No</option><br>
+                           </select>
+                    </section> <!-- end of rightHalf -->
+                </form>
+            </section> <!-- end of Demographics -->
+            
+            <section id="Basic Diagnostics" class="Assessment Setup">
+                <h3>Basic Diagnostics</h3>
+            </section> <!-- end of Basic Diagnostics -->
+            
+            <section id="History" class="Assessment Setup">
+                <h3>History</h3>
+            </section> <!-- end of History -->
+            
+            <section id="Records Reviewed" class="Assessment Setup">
+                <h3>Records Reviewed</h3>
+            </section> <!-- end of Records Reviewed -->
+            
+            <section id="Present Status" class="Assessment Setup">
+                <h3>Present Status</h3>
+            </section> <!-- end of Present Status -->
+            
+            <section id="Medications" class="Assessment Setup">
+                <h3>Medications</h3>
+            </section> <!-- end of Medications -->
+            
+            <section id="Assessment Purpose" class="Assessment Setup">
+                <h3>Assessment Purpose</h3>
+            </section> <!-- end of Assessment Purpose -->
+            
+        </section> <!-- end of Assessment Setup -->
+        
+        <section id="Job Demand Analysis">
+            <h2>Job Demand Analysis</h2>
+            <section class="subCategoryNav">
+                <span class="subCategory" onClick="changeSubCategory(0)">Vocational Status</span>
+                <span class="subCategory" onClick="changeSubCategory(1)">Sit/Stand</span>
+                <span class="subCategory" onClick="changeSubCategory(2)">Material handling</span>
+                <span class="subCategory" onClick="changeSubCategory(3)">Positional Tolerances</span>
+                <span class="subCategory" onClick="changeSubCategory(4)">Climbing</span>
+                <span class="subCategory" onClick="changeSubCategory(5)">Upper Extremity</span>
+                <span class="subCategory" onClick="changeSubCategory(6)">Job Simulation</span>
+            </section>
+            
+            <section id="Vocational Status">
+                <h3>Vocational Status</h3>
+            </section> <!-- end of Vocational Status -->
+            
+            <section id="Sit/Stand">
+                <h3>Sit/Stand</h3>
+            </section> <!-- end of Sit/Stand -->
+            
+            <section id="Material handling">
+                <h3>Material handling</h3>
+            </section> <!-- end of Material handling -->
+            
+            <section id="Positional Tolerances">
+                <h3>Positional Tolerances</h3>
+            </section> <!-- end of Positional Tolerances -->
+            
+            <section id="Climbing">
+                <h3>Climbing</h3>
+            </section> <!-- end of Climbing -->
+            
+            <section id="Upper Extremity">
+                <h3>Upper Extremity</h3>
+            </section> <!-- end of Upper Extremity -->
+            
+            <section id="Job Simulation">
+                <h3>Job Simulation</h3>
+            </section> <!-- end of Job Simulation -->
+            
+        </section> <!-- end of Job Demand Analysis -->
+        
+        <section id="Musculoskeletal Testing">
+            <h2>Musculoskeletal Testing</h2>
+            <section class="subCategoryNav">
+                <span class="subCategory" onClick="changeSubCategory(0)">Posture/Palpation/Reflex</span>
+                <span class="subCategory" onClick="changeSubCategory(1)">Cervical ROM</span>
+                <span class="subCategory" onClick="changeSubCategory(2)">Thoracic ROM</span>
+                <span class="subCategory" onClick="changeSubCategory(3)">Lumbar ROM</span>
+                <span class="subCategory" onClick="changeSubCategory(4)">Spine Comments</span>
+                <span class="subCategory" onClick="changeSubCategory(5)">Lower Extremity ROM/MMT</span>
+                <span class="subCategory" onClick="changeSubCategory(6)">Upper Extremity ROM/MMT</span>
+                <span class="subCategory" onClick="changeSubCategory(7)">Extremity Comments</span>
+                <span class="subCategory" onClick="changeSubCategory(8)">Hand ROM/MMT</span>
+                <span class="subCategory" onClick="changeSubCategory(9)">Orthotics/Assistive Devices</span>
+                <span class="subCategory" onClick="changeSubCategory(10)">Circumferential/Volumetric Measurements</span>
+                <span class="subCategory" onClick="changeSubCategory(11)">Two Point Discrimination</span>
+                <span class="subCategory" onClick="changeSubCategory(12)">Sharp Dull Awareness</span>
+                <span class="subCategory" onClick="changeSubCategory(13)">Semmes Weinstein</span>
+                <span class="subCategory" onClick="changeSubCategory(14)">Lower Extremity Sensation</span>
+                <span class="subCategory" onClick="changeSubCategory(15)">Sensation Comments</span>
+            </section>
+            
+            <section id="Posture/Palpation/Reflex">
+                <h3>Posture/Palpation/Reflex</h3>
+            </section> <!-- end of Posture/Palpation/Reflex -->
+            
+            <section id="Cervical ROM">
+                <h3>Cervical ROM</h3>
+            </section> <!-- end of Cervical ROM -->
+            
+            <section id="Thoracic ROM">
+                <h3>Thoracic ROM</h3>
+            </section> <!-- end of Thoracic ROM -->
+            
+            <section id="Lumbar ROM">
+                <h3>Lumbar ROM</h3>
+            </section> <!-- end of Lumbar ROM -->
+            
+            <section id="Spine Comments">
+                <h3>Spine Comments</h3>
+            </section> <!-- end of Spine Comments -->
+            
+            <section id="Lower Extremity ROM/MMT">
+                <h3>Lower Extremity ROM/MMT</h3>
+            </section> <!-- end of Lower Extremity ROM/MMT -->
+            
+            <section id="Upper Extremity ROM/MMT">
+                <h3>Upper Extremity ROM/MMT</h3>
+            </section> <!-- end of Upper Extremity ROM/MMT -->
+            
+            <section id="Extremity Comments">
+                <h3>Extremity Comments</h3>
+            </section> <!-- end of Extremity Comments -->
+            
+            <section id="Hand ROM/MMT">
+                <h3>Hand ROM/MMT</h3>
+                <p>has all 5 fingers tables</p>
+            </section> <!-- end of Hand ROM/MMT -->
+            
+            <section id="Orthotics/Assistive Devices">
+                <h3>Orthotics/Assistive Devices</h3>
+            </section> <!-- end of Orthotics/Assistive Devices -->
+            
+            <section id="Circumferential/Volumetric Measurements">
+                <h3>Circumferential/Volumetric Measurements</h3>
+            </section> <!-- end of Circumferential/Volumetric Measurements -->
+            
+            <section id="Two Point Discrimination">
+                <h3>Two Point Discrimination</h3>
+            </section> <!-- end of Two Point Discrimination -->
+            
+            <section id="Sharp Dull Awareness">
+                <h3>Sharp Dull Awareness</h3>
+            </section> <!-- end of Sharp Dull Awareness -->
+            
+            <section id="Semmes Weinstein">
+                <h3>Semmes Weinstein</h3>
+            </section> <!-- end of Semmes Weinstein -->
+            
+            <section id="Lower Extremity Sensation">
+                <h3>Lower Extremity Sensation</h3>
+            </section> <!-- end of Lower Extremity Sensation -->
+            
+            <section id="Sensation Comments">
+                <h3>Sensation Comments</h3>
+            </section> <!-- end of Sensation Comments -->
+        </section> <!-- end of Musculoskeletal Testing -->
+        
+        <section id="Reliability of Pain">
+            <h2>Reliability of Pain</h2>
+            <section class="subCategoryNav">
+                <span class="subCategory" onClick="changeSubCategory(0)">Waddell Signs</span>
+                <span class="subCategory" onClick="changeSubCategory(1)">Psychometric Testing</span>
+            </section>
+            
+            <section id="Waddell Signs">
+                <h3>Waddell Signs</h3>
+            </section> <!-- end of Waddell Signs -->
+            
+            <section id="Psychometric Testing">
+                <h3>Psychometric Testing</h3>
+            </section> <!-- end of Psychometric Testing -->
+            
+        </section> <!-- end of Reliability of Pain -->
+        
+        <section id="Upper Extremity Testing">
+            <h2>Upper Extremity Testing</h2>
+            <section class="subCategoryNav">
+                <span class="subCategory" onClick="changeSubCategory(0)">Grip Testing</span>
+                <span class="subCategory" onClick="changeSubCategory(1)">Pinch Testing</span>
+                <span class="subCategory" onClick="changeSubCategory(2)">Fine Motor Coordination</span>
+                <span class="subCategory" onClick="changeSubCategory(3)">Gross Motor Coordination</span>
+            </section>
+            
+            <section id="Grip Testing">
+                <h3>Grip Testing</h3>
+            </section> <!-- end of Grip Testing -->
+            
+            <section id="Pinch Testing">
+                <h3>Pinch Testing</h3>
+            </section> <!-- end of Pinch Testing -->
+            
+            <section id="Fine Motor Coordination">
+                <h3>Fine Motor Coordination</h3>
+            </section> <!-- end of Fine Motor Coordination -->
+            
+            <section id="Gross Motor Coordination">
+                <h3>Gross Motor Coordination</h3>
+            </section> <!-- end of Gross Motor Coordination -->
+            
+        </section> <!-- end of Upper Extremity Testing -->
+        
+        <section id="Non-Material handling">
+            <h2>Non-Material handling</h2>
+            <section class="subCategoryNav">
+                <span class="subCategory" onClick="changeSubCategory(0)">Walking</span>
+                <span class="subCategory" onClick="changeSubCategory(1)">Reaching</span>
+                <span class="subCategory" onClick="changeSubCategory(2)">Above Shoulder Reaching</span>
+                <span class="subCategory" onClick="changeSubCategory(3)">Bending</span>
+                <span class="subCategory" onClick="changeSubCategory(4)">Squating</span>
+                <span class="subCategory" onClick="changeSubCategory(5)">Kneeling</span>
+                <span class="subCategory" onClick="changeSubCategory(6)">Crawling</span>
+                <span class="subCategory" onClick="changeSubCategory(7)">Static Balance</span>
+                <span class="subCategory" onClick="changeSubCategory(8)">Dynamic Balance</span>
+            </section>
+            
+            <section id="Walking">
+                <h3>Walking</h3>
+            </section> <!-- end of Walking -->
+            
+            <section id="Reaching">
+                <h3>Reaching</h3>
+            </section> <!-- end of Reaching -->
+            
+            <section id="Above Shoulder Reaching">
+                <h3>Above Shoulder Reaching</h3>
+            </section> <!-- end of Above Shoulder Reaching -->
+            
+            <section id="Bending">
+                <h3>Bending</h3>
+            </section> <!-- end of Bending -->
+            
+            <section id="Squating">
+                <h3>Squating</h3>
+            </section> <!-- end of Squating -->
+            
+            <section id="Kneeling">
+                <h3>Kneeling</h3>
+            </section> <!-- end of Kneeling -->
+            
+            <section id="Crawling">
+                <h3>Crawling</h3>
+            </section> <!-- end of Crawling -->
+            
+            <section id="Static Balance">
+                <h3>Static Balance</h3>
+            </section> <!-- end of Static Balance -->
+            
+            <section id="Dynamic Balance">
+                <h3>Dynamic Balance</h3>
+            </section> <!-- end of Dynamic Balance -->
+            
+        </section> <!-- end of Non-Material handling -->
+        
+        <section id="Occasional Material Handling">
+            <h2>Occasional Material Handling</h2>
+            <section class="subCategoryNav">
+                <span class="subCategory" onClick="changeSubCategory(0)">Pre-handling Diagnostics</span>
+                <span class="subCategory" onClick="changeSubCategory(1)">Job Specific/Bending</span>
+                <span class="subCategory" onClick="changeSubCategory(2)">Squat Lift</span>
+                <span class="subCategory" onClick="changeSubCategory(3)">Power Lift</span>
+                <span class="subCategory" onClick="changeSubCategory(4)">Shoulder Lift</span>
+                <span class="subCategory" onClick="changeSubCategory(5)">Overhead Lift</span>
+                <span class="subCategory" onClick="changeSubCategory(6)">Bilateral Carry</span>
+                <span class="subCategory" onClick="changeSubCategory(7)">Unilateral Lift</span>
+                <span class="subCategory" onClick="changeSubCategory(8)">Unilateral Carry</span>
+                <span class="subCategory" onClick="changeSubCategory(9)">Pushing/Pulling</span>
+            </section>
+            
+            <section id="Pre-handling Diagnostics">
+                <h3>Pre-handling Diagnostics</h3>
+            </section> <!-- end of Pre-handling Diagnostics -->
+            
+            <section id="Job Specific/Bending">
+                <h3>Job Specific/Bending</h3>
+            </section> <!-- end of Job Specific/Bending -->
+            
+            <section id="Squat Lift">
+                <h3>Squat Lift</h3>
+            </section> <!-- end of Squat Lift -->
+            
+            <section id="Power Lift">
+                <h3>Power Lift</h3>
+            </section> <!-- end of Power Lift -->
+            
+            <section id="Shoulder Lift">
+                <h3>Shoulder Lift</h3>
+            </section> <!-- end of Shoulder Lift -->
+            
+            <section id="Overhead Lift">
+                <h3>Overhead Lift</h3>
+            </section> <!-- end of Overhead Lift -->
+            
+            <section id="Bilateral Carry">
+                <h3>Bilateral Carry</h3>
+            </section> <!-- end of Bilateral Carry -->
+            
+            <section id="Unilateral Lift">
+                <h3>Unilateral Lift</h3>
+            </section> <!-- end of Unilateral Lift -->
+            
+            <section id="Unilateral Carry">
+                <h3>Unilateral Carry</h3>
+            </section> <!-- end of Unilateral Carry -->
+            
+            <section id="Pushing/Pulling">
+                <h3>Pushing/Pulling</h3>
+            </section> <!-- end of Pushing/Pulling -->
+            
+        </section> <!-- end of Occasional Material Handling -->
+        
+        <section id="Frequent Material Handling">
+            <h2>Frequent Material Handling</h2>
+            <section class="subCategoryNav">
+                <span class="subCategory" onClick="changeSubCategory(0)">Squat Lift</span>
+                <span class="subCategory" onClick="changeSubCategory(1)">Power Lift</span>
+                <span class="subCategory" onClick="changeSubCategory(2)">Shoulder Lift</span>
+                <span class="subCategory" onClick="changeSubCategory(3)">Overhead Lift</span>
+                <span class="subCategory" onClick="changeSubCategory(4)">Bilateral Carry</span>
+                <span class="subCategory" onClick="changeSubCategory(5)">Unilateral Lift</span>
+                <span class="subCategory" onClick="changeSubCategory(6)">Unilateral Carry</span>
+                <span class="subCategory" onClick="changeSubCategory(7)">Pushing/Pulling</span>
+            </section>
+            
+            <section id="Frequent Squat Lift">
+                <h3>Frequent Squat Lift</h3>
+            </section> <!-- end of Frequent Squat Lift -->
+            
+            <section id="Frequent Power Lift">
+                <h3>Frequent Power Lift</h3>
+            </section> <!-- end of Frequent Power Lift -->
+            
+            <section id="Frequent Shoulder Lift">
+                <h3>Frequent Shoulder Lift</h3>
+            </section> <!-- end of Frequent Shoulder Lift -->
+            
+            <section id="Frequent Overhead Lift">
+                <h3>Frequent Overhead Lift</h3>
+            </section> <!-- end of Frequent Overhead Lift -->
+            
+            <section id="Frequent Bilateral Carry">
+                <h3>Frequent Bilateral Carry</h3>
+            </section> <!-- end of Frequent Bilateral Carry -->
+            
+            <section id="Frequent Unilateral Lift">
+                <h3>Frequent Unilateral Lift</h3>
+            </section> <!-- end of Frequent Unilateral Lift -->
+            
+            <section id="Frequent Unilateral Carry">
+                <h3>Frequent Unilateral Carry</h3>
+            </section> <!-- end of Frequent Unilateral Carry -->
+            
+            <section id="Frequent Pushing/Pulling">
+                <h3>Frequent Pushing/Pulling</h3>
+            </section> <!-- end of Frequent  Pushing/Pulling -->
+            
+        </section> <!-- end of Frequent Material Handling -->
+        
+        <section id="Sit/Stand/Climb">
+            <h2>Sit/Stand/Climb</h2>
+            <section class="subCategoryNav">
+                <span class="subCategory" onClick="changeSubCategory(0)">Stair Climbing</span>
+                <span class="subCategory" onClick="changeSubCategory(1)">Ladder Climbing</span>
+                <span class="subCategory" onClick="changeSubCategory(2)">Sitting/Standing</span>
+            </section>
+            
+            <section id="Stair Climbing">
+                <h3>Stair Climbing</h3>
+            </section> <!-- end of Stair Climbing -->
+            
+            <section id="Ladder Climbing">
+                <h3>Ladder Climbing</h3>
+            </section> <!-- end of Ladder Climbing -->
+            
+            <section id="Sitting/Standing">
+                <h3>Sitting/Standing</h3>
+            </section> <!-- end of Sitting/Standing -->
+            
+        </section> <!-- end of Sit/Stand/Climb -->
+        
+        <section id="Job Simulated Functional Abilities">
+            <h2>Job Simulated Functional Abilities</h2>
+            <section class="subCategoryNav">
+                <span class="subCategory" onClick="changeSubCategory(0)">Test 1</span>
+                <span class="subCategory" onClick="changeSubCategory(1)">Test 2</span>
+                <span class="subCategory" onClick="changeSubCategory(2)">Test 3</span>
+            </section>
+            
+            <section id="Test 1">
+                <h3>Test 1</h3>
+            </section> <!-- end of Test 1 -->
+            
+            <section id="Test 2">
+                <h3>Test 2</h3>
+            </section> <!-- end of Test 2 -->
+            
+            <section id="Test 3">
+                <h3>Test 3</h3>
+            </section> <!-- end of Test 3 -->
+            
+        </section> <!-- end of Job Simulated Functional Abilities -->
+        
+        <section id="ROP/COE Profile">
+            <h2>ROP/COE Profile</h2>
+            <section class="subCategoryNav">
+                <span class="subCategory" onClick="changeSubCategory(0)">Observation</span>
+                <span class="subCategory" onClick="changeSubCategory(1)">Waddell Signs</span>
+                <span class="subCategory" onClick="changeSubCategory(2)">Psychometric Testing</span>
+                <span class="subCategory" onClick="changeSubCategory(3)">Upper Extremity Test</span>
+                <span class="subCategory" onClick="changeSubCategory(4)">Non-Material Handling</span>
+                <span class="subCategory" onClick="changeSubCategory(5)">Occasional Material Handling</span>
+                <span class="subCategory" onClick="changeSubCategory(6)">Frequent Material Handling</span>
+                <span class="subCategory" onClick="changeSubCategory(7)">Job Simulated Functional Testing</span>
+                <span class="subCategory" onClick="changeSubCategory(8)">Climbing</span>
+                <span class="subCategory" onClick="changeSubCategory(9)">Custom Test</span>
+            </section>
+            
+            <section id="ROP Observation">
+                <h3>Observation</h3>
+            </section> <!-- end of ROP cat11SubCategory1 -->
+            
+            <section id="ROP Waddell Signs">
+                <h3>Waddell Signs</h3>
+            </section> <!-- end of ROP Waddell Signs -->
+            
+            <section id="ROP Psychometric Testing">
+                <h3>Psychometric Testing</h3>
+            </section> <!-- end of ROP Psychometric Testing -->
+            
+            <section id="ROP Upper Extremity Test">
+                <h3>Upper Extremity Test</h3>
+            </section> <!-- end of ROP Upper Extremity Test -->
+            
+            <section id="ROP Non-Material Handling">
+                <h3>Non-Material Handling</h3>
+            </section> <!-- end of ROP Non-Material Handling -->
+            
+            <section id="ROP Occasional Material Handling">
+                <h3>Occasional Material Handling</h3>
+            </section> <!-- end of ROP Occasional Material Handling -->
+            
+            <section id="ROP Frequent Material Handling">
+                <h3>Frequent Material Handling</h3>
+            </section> <!-- end of ROP Frequent Material Handling -->
+            
+            <section id="ROP Job Simulated Functional Testing">
+                <h3>Job Simulated Functional Testing</h3>
+            </section> <!-- end of ROP Job Simulated Functional Testing -->
+            
+            <section id="ROP Climbing">
+                <h3>Climbing</h3>
+            </section> <!-- end of ROP Climbing -->
+            
+            <section id="ROP Custom Test">
+                <h3>Custom Test</h3>
+            </section> <!-- end of ROP Custom Test -->
+            
+        </section> <!-- end of ROP/COE Profile -->
+        
+        <section id="Results and Recommendations">
+            <h2>Results and Recommendations</h2>
+            <section class="subCategoryNav">
+                <span class="subCategory" onClick="changeSubCategory(0)">Evaluation Results</span>
+                <span class="subCategory" onClick="changeSubCategory(1)">Evaluation Summary</span>
+                <span class="subCategory" onClick="changeSubCategory(2)">Evaluation Recommendations</span>
+                <span class="subCategory" onClick="changeSubCategory(3)">Evaluation Comments</span>
+                <span class="subCategory" onClick="changeSubCategory(4)">Charts/Graphs/Tables</span>
+            </section>
+            
+            <section id="Evaluation Results">
+                <h3>Evaluation Results</h3>
+            </section> <!-- end of Evaluation Results -->
+            
+            <section id="Evaluation Summary">
+                <h3>Evaluation Summary</h3>
+            </section> <!-- end of Evaluation Summary -->
+            
+            <section id="Evaluation Recommendations">
+                <h3>Evaluation Recommendations</h3>
+            </section> <!-- end of Evaluation Recommendations -->
+            
+            <section id="Evaluation Comments">
+                <h3>Evaluation Comments</h3>
+            </section> <!-- end of Evaluation Comments -->
+            
+            <section id="Charts/Graphs/Tables">
+                <h3>Charts/Graphs/Tables</h3>
+            </section> <!-- end of Charts/Graphs/Tables -->
+            
+        </section> <!-- end of Results and Recommendations -->
+        
+    </section> <!-- end of display -->
+    
+    <section id="categorySelect">
+        <span class="category" onClick="changeCategory(0)">Assessment Setup</span>
+        <span class="category" onClick="changeCategory(1)">Job Demand Analysis</span>
+        <span class="category" onClick="changeCategory(2)">Musculoskeletal Testing</span>
+        <span class="category" onClick="changeCategory(3)">Reliability of Pain</span>
+        <span class="category" onClick="changeCategory(4)">Upper Extremity Testing</span>
+        <span class="category" onClick="changeCategory(5)">Non-Material handling</span>
+        <span class="category" onClick="changeCategory(6)">Occasional Material Handling</span>
+        <span class="category" onClick="changeCategory(7)">Frequent Material Handling</span>
+        <span class="category" onClick="changeCategory(8)">Sit/Stand/Climb</span>
+        <span class="category" onClick="changeCategory(9)">Job Simulated Functional Abilities</span>
+        <span class="category" onClick="changeCategory(10)">ROP/COE Profile</span>
+        <span class="category" onClick="changeCategory(11)">Results and Recommendations</span>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
