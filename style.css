@@ -15,6 +15,7 @@ body{
     display:inline-block;
     background-color: skyblue;
     float:right;
+    margin-top:67px;
 }
 
 
@@ -44,13 +45,14 @@ body{
     display:flex;
 }
 
-.leftHalf, .rightHalf {
+.leftHalf{
     width:440px;
     display:inline-block;
 }
 
 .rightHalf{
-    
+    width:600px;
+    display:inline-block;
 }
 
 .left{
@@ -64,14 +66,54 @@ input.right{
     display:inline-block;
 }
 
+input.center{
+    width:150px;
+    display:inline-block;
+}
+
+input.centerSmall{
+    width:50px;
+    display:inline-block;
+}
+
 label.left{
     padding-bottom:20px;
+}
+
+label.rightThird{
+    padding-bottom:20px;
+}
+
+label.leftMost{
+    width:300px;
+    display:inline-block;
+    text-align: right;
+}
+
+label.leftMid{
+    width:250px;
+    display:inline-block;
+    text-align:right;
+}
+
+select.rightMost{
+    margin-left:305px;
 }
 
 select.right{
     display:inline-block;
 }
+
+textarea{
+    display:block;
+}
+
 select{
     display:block;
+}
+
+h4{
+    margin-bottom:0px;
+    padding-left:10px;
 }
 

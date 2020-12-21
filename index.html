@@ -5,7 +5,7 @@
     <title>Functional Capacity Evaluation</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="changeCategory('0')">
+<body onload="changeCategory('1')">
     <h1>Functional Capacity Evaluation</h1>
     
     <section id="display">
@@ -87,26 +87,157 @@
             
             <section id="Basic Diagnostics" class="Assessment Setup">
                 <h3>Basic Diagnostics</h3>
+                <form id="BasicDiagnosticsForm" class="forms">
+                    <section class="leftHalf">
+                       <h4>Anthropometry</h4>
+                        <label for="height" class="left">Height: </label>
+                        <input type="text" id="height" name="height" class="center">
+                        <label for="height" class="rightThird">inches</label><br>
+                        <label for="weight" class="left">Weight: </label>
+                        <input type="text" id="weight" name="weight" class="center">
+                        <label for="weight" class="rightThird">pounds</label><br>
+                        <label for="dominance" class="left">Dominance: </label>
+                        <select name="dominance" id="dominance" class="right">
+                            <option value=""></option>
+                            <option value="Right Handed">Right Handed</option>
+                            <option value="Left Handed">Left Handed</option>
+                            <option value="Ambidextrous">Ambidextrous</option>
+                        </select><br>
+                        
+                        <h4>Pre-Evaluation Diagnostics</h4>
+                        <label for="restingHeartRate" class="left">Resting Heart Rate: </label>
+                        <input type="text" id="restingHeartRate" name="restingHeartRate" class="center">
+                        <label for="restingHeartRate" class="rightThird">bpm</label><br>
+                        <label for="restingBloodPressure" class="left">Resting Blood Pressure: </label>
+                        <input type="text" id="restingBloodPressure" name="restingBloodPressure" class="center">
+                        <label for="restingBloodPressure" class="rightThird">mmHg</label><br>
+                        <label for="restingRespiratoryRate" class="left">Resting Respiratory Rate: </label>
+                        <input type="text" id="restingRespiratoryRate" name="restingRespiratoryRate" class="center">
+                        <label for="restingRespiratoryRate" class="rightThird">/min</label><br>
+                        <h4>Limiting Factors</h4>
+                        <label for="aerobicLimitingFactor" class="left">Aerobic Limiting Factor: </label>
+                        <input type="text" id="aerobicLimitingFactor" name="aerobicLimitingFactor" class="center">
+                        <label for="aerobicLimitingFactor" class="rightThird">bpm</label><br>
+                        <label for="weightLimitingFactor" class="left">Weight Limiting Factor: </label>
+                        <input type="text" id="weightLimitingFactor" name="weightLimitingFactor" class="center">
+                        <label for="weightLimitingFactor" class="rightThird">pounds</label><br>
+                    </section> <!-- end of leftHalf -->
+                    <section class="rightHalf">
+                        <h4>Pain Rating</h4>
+                        <p>Following the presentation of the OccuPro Functional Pain Scale did this client report that they understood the pain scale?</p>
+                        <select name="understandPainScale" id="understandPainScale" class="rightMost">
+                            <option value=""></option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select><br>
+                        <label for="presentFunctionalPainLevel" class="leftMost">Present Functional Pain Level: </label>
+                        <select name="presentFunctionalPainLevel" id="presentFunctionalPainLevel" class="right">
+                            <option value=""></option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select><br>
+                        <label for="averageFunctionalPainLevel" class="leftMost">Average Functional Pain Level: </label>
+                        <select name="averageFunctionalPainLevel" id="averageFunctionalPainLevel" class="right">
+                            <option value=""></option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select><br>
+                        <label for="worstFunctionalPainLevel" class="leftMost">Worst Functional Pain Level: </label>
+                        <select name="worstFunctionalPainLevel" id="worstFunctionalPainLevel" class="right">
+                            <option value=""></option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select><br>
+                        <label for="leastFunctionalPainLevel" class="leftMost">Least Functional Pain Level: </label>
+                        <select name="leastFunctionalPainLevel" id="leastFunctionalPainLevel" class="right">
+                            <option value=""></option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select><br>
+                        
+                        <p>Following the presentation of the OccuPro Functional Pain Scale did this client report that they understood the pain scale?</p>
+                        <select name="reportReliableLevelOfPain" id="reportReliableLevelOfPain" class="rightMost">
+                            <option value=""></option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select><br>
+                        
+                    </section> <!-- end of rightHalf -->
+                        
+                </form>
             </section> <!-- end of Basic Diagnostics -->
             
             <section id="History" class="Assessment Setup">
                 <h3>History</h3>
+                <form id="BasicDiagnosticsForm">
+                    <h4>History of Present Condition</h4>
+                    <textarea name="historyOfPresentCondition" id="historyOfPresentCondition" cols="140" rows="8"></textarea><br>
+                    <h4>Past Medical History</h4>
+                    <textarea name="pastMedicalHistory" id="pastMedicalHistory" cols="140" rows="8"></textarea><br>
+                    <h4>Present Status</h4>
+                    <textarea name="presentStatus" id="presentStatus" cols="140" rows="8"></textarea><br>
+                    <h4>Medications</h4>
+                    <textarea name="medications" id="medications" cols="140" rows="8"></textarea><br>
+                    <h4>Assessment Purpose</h4>
+                    <textarea name="assessmentPurpose" id="assessmentPurpose" cols="140" rows="8"></textarea><br>
+                    
+                </form>
             </section> <!-- end of History -->
             
             <section id="Records Reviewed" class="Assessment Setup">
                 <h3>Records Reviewed</h3>
+                <textarea name="recordsReviewed" id="recordsReviewed" cols="140" rows="8"></textarea><br>
             </section> <!-- end of Records Reviewed -->
             
             <section id="Present Status" class="Assessment Setup">
                 <h3>Present Status</h3>
+                <textarea name="presentStatus" id="presentStatus" cols="140" rows="8"></textarea><br>
             </section> <!-- end of Present Status -->
             
             <section id="Medications" class="Assessment Setup">
                 <h3>Medications</h3>
+                <textarea name="medications" id="medications" cols="140" rows="8"></textarea><br>
             </section> <!-- end of Medications -->
             
             <section id="Assessment Purpose" class="Assessment Setup">
                 <h3>Assessment Purpose</h3>
+                <textarea name="assessmentPurpose" id="assessmentPurpose" cols="140" rows="8"></textarea><br>
             </section> <!-- end of Assessment Purpose -->
             
         </section> <!-- end of Assessment Setup -->
@@ -125,14 +256,221 @@
             
             <section id="Vocational Status">
                 <h3>Vocational Status</h3>
+                <form id="BasicDiagnosticsForm" class="forms">
+                   <section class="leftHalf">
+                        <label for="currentWorkStatus" class="left">Current Work Status: </label>
+                        <select name="currentWorkStatus" id="currentWorkStatus" class="right">
+                            <option value=""></option>
+                            <option value="Off At Work">Off At Work</option>
+                            <option value="Light/Modified Duty Work Full Time">Light/Modified Duty Work Full Time</option>
+                            <option value="Light/Modified Duty Work Part Time">Light/Modified Duty Work Part Time</option>
+                            <option value="Full Duty Work Part Time">Full Duty Work Part Time</option>
+                            <option value="Full Duty Work Full Time">Full Duty Work Full Time</option>
+                        </select><br>
+                   </section><!-- end of leftHalf -->
+                   <section class="rightHalf">
+                        <label for="physicalDemandsObtainedFrom" class="left">Physical Demands Obtained From: </label>
+                        <select name="physicalDemandsObtainedFrom" id="physicalDemandsObtainedFrom" class="right">
+                            <option value=""></option>
+                            <option value="On-Site Job Demands Analysis">On-Site Job Demands Analysis</option>
+                            <option value="Job Description">Job Description</option>
+                            <option value="Dictionary of Occupational Titles">Dictionary of Occupational Titles</option>
+                            <option value="Client">Client</option>
+                            <option value="Verbal Discussion with Employer">Verbal Discussion with Employer</option>
+                        </select><br>
+                    </section><!-- end of rightHalf -->
+                </form>
+                <h4>Vocational Status</h4>
+                <textarea name="vocationalStatus" id="vocationalStatus" cols="140" rows="8"></textarea><br>
+                
             </section> <!-- end of Vocational Status -->
             
             <section id="Sit/Stand">
                 <h3>Sit/Stand</h3>
+                <label for="sitting" class="left">Sitting: </label>
+                <select name="sitting" id="sitting" class="right">
+                    <option value=""></option>
+                    <option value="Occasional">Occasional</option>
+                    <option value="Frequent">Frequent</option>
+                    <option value="Constantly">Constantly</option>
+                </select><br>
+                
+                <label for="standing" class="left">Standing: </label>
+                <select name="standing" id="standing" class="right">
+                    <option value=""></option>
+                    <option value="Occasional">Occasional</option>
+                    <option value="Frequent">Frequent</option>
+                    <option value="Constantly">Constantly</option>
+                </select><br>
+                
+                <label for="walking" class="left">Walking: </label>
+                <select name="walking" id="walking" class="right">
+                    <option value=""></option>
+                    <option value="Occasional">Occasional</option>
+                    <option value="Frequent">Frequent</option>
+                    <option value="Constantly">Constantly</option>
+                </select><br>
             </section> <!-- end of Sit/Stand -->
             
             <section id="Material handling">
-                <h3>Material handling</h3>
+                <h3>Material Handling</h3>
+                <form id="MaterialHandlingForm" class="forms">
+                    <section class="leftHalf">
+                        <h4>Floor to Waist Lift</h4><br>
+                        <label for="occasionalFloorToWaistLift" class="leftMost">Occasional Floor to Waist Lift: </label>
+                        <input type="text" id="occasionalFloorToWaistLift" name="occasionalFloorToWaistLift" class="centerSmall">
+                        <label for="occasionalFloorToWaistLift" class="rightThird">pounds</label><br>
+                        
+                        <label for="frequentFloorToWaistLift" class="leftMost">Frequent Floor to Waist Lift: </label>
+                        <input type="text" id="frequentFloorToWaistLift" name="frequentFloorToWaistLift" class="centerSmall">
+                        <label for="frequentFloorToWaistLift" class="rightThird">pounds</label><br>
+                        
+                        <label for="constantFloorToWaistLift" class="leftMost">Constant Floor to Waist Lift: </label>
+                        <input type="text" id="constantFloorToWaistLift" name="constantFloorToWaistLift" class="centerSmall">
+                        <label for="constantFloorToWaistLift" class="rightThird">pounds</label><br>
+                        
+                        <h4>12 inches to Waist Lift</h4><br>
+                        <label for="occasional12InchesToWaistLift" class="leftMost">Occasional 12 Inches to Waist Lift: </label>
+                        <input type="text" id="occasional12InchesToWaistLift" name="occasional12InchesToWaistLift" class="centerSmall">
+                        <label for="occasional12InchesToWaistLift" class="rightThird">pounds</label><br>
+                        
+                        <label for="frequent12InchesToWaistLift" class="leftMost">Frequent 12 Inches to Waist Lift: </label>
+                        <input type="text" id="frequent12InchesToWaistLift" name="frequent12InchesToWaistLift" class="centerSmall">
+                        <label for="frequent12InchesToWaistLift" class="rightThird">pounds</label><br>
+                        
+                        <label for="constant12InchesToWaistLift" class="leftMost">Frequent 12 Inches to Waist Lift: </label>
+                        <input type="text" id="constant12InchesToWaistLift" name="constant12InchesToWaistLift" class="centerSmall">
+                        <label for="constant12InchesToWaistLift" class="rightThird">pounds</label><br>
+                        
+                        <h4>Shoulder Lift</h4><br>
+                        <label for="occasionalWaistToShoulderLift" class="leftMost">Occasional Waist to Shoulder Lift: </label>
+                        <input type="text" id="occasionalWaistToShoulderLift" name="occasionalWaistToShoulderLift" class="centerSmall">
+                        <label for="occasionalWaistToShoulderLift" class="rightThird">pounds</label><br>
+                        
+                        <label for="frequentWaistToShoulderLift" class="leftMost">Frequent Waist to Shoulder Lift: </label>
+                        <input type="text" id="frequentWaistToShoulderLift" name="frequentWaistToShoulderLift" class="centerSmall">
+                        <label for="frequentWaistToShoulderLift" class="rightThird">pounds</label><br>
+                        
+                        <label for="constantWaistToShoulderLift" class="leftMost">Constant Waist to Shoulder Lift: </label>
+                        <input type="text" id="constantWaistToShoulderLift" name="constantWaistToShoulderLift" class="centerSmall">
+                        <label for="constantWaistToShoulderLift" class="rightThird">pounds</label><br>
+                        
+                        <h4>Overhead Lift</h4><br>
+                        <label for="occasionalOverheadLift" class="leftMost">Occasional Overhead Lift: </label>
+                        <input type="text" id="occasionalOverheadLift" name="occasionalOverheadLift" class="centerSmall">
+                        <label for="occasionalOverheadLift" class="rightThird">pounds</label><br>
+                        
+                        <label for="frequentOverheadLift" class="leftMost">Frequent Overhead Lift: </label>
+                        <input type="text" id="frequentOverheadLift" name="frequentOverheadLift" class="centerSmall">
+                        <label for="frequentOverheadLift" class="rightThird">pounds</label><br>
+                        
+                        <label for="constantOverheadLift" class="leftMost">Constant Overhead Lift: </label>
+                        <input type="text" id="constantOverheadLift" name="constantOverheadLift" class="centerSmall">
+                        <label for="constantOverheadLift" class="rightThird">pounds</label><br>
+                        
+                        <h4>Job-Specific / Bend Lift</h4><br>
+                        <label for="jobSpecificBendLift" class="leftMost">Job-Specific/Bend Lift: </label>
+                        <input type="text" id="jobSpecificBendLift" name="jobSpecificBendLift" class="centerSmall">
+                        <label for="jobSpecificBendLift" class="rightThird">pounds</label><br>
+                        
+                        
+                    </section> <!-- end of leftHalf -->
+                    <section class="rightHalf">
+                        <h4>Bilateral Carry</h4><br>
+                        <label for="occasionalBilateralCarryWeight" class="leftMid">Occasional Bilateral Carry: </label>
+                        <input type="text" id="occasionalBilateralCarryWeight" name="occasionalBilateralCarryWeight" class="centerSmall">
+                        <label for="occasionalBilateralCarryWeight" class="rightThird">pounds</label>
+                        <input type="text" id="occasionalBilateralCarryHeight" name="occasionalBilateralCarryHeight" class="centerSmall">
+                        <label for="occasionalBilateralCarryHeight" class="rightThird">feet</label>
+                        
+                        <label for="frequentBilateralCarryWeight" class="leftMid">Frequent Bilateral Carry: </label>
+                        <input type="text" id="frequentBilateralCarryWeight" name="frequentBilateralCarryWeight" class="centerSmall">
+                        <label for="frequentBilateralCarryWeight" class="rightThird">pounds</label>
+                        <input type="text" id="frequentBilateralCarryHeight" name="frequentBilateralCarryHeight" class="centerSmall">
+                        <label for="frequentBilateralCarryHeight" class="rightThird">feet</label>
+                        
+                        <label for="frequentBilateralCarryWeight" class="leftMid">Frequent Bilateral Carry: </label>
+                        <input type="text" id="constantBilateralCarryWeight" name="constantBilateralCarryWeight" class="centerSmall">
+                        <label for="constantBilateralCarryWeight" class="rightThird">pounds</label>
+                        
+                        <h4>Unilateral Carry</h4><br>
+                        <label for="occasionalUnilateralCarryWeight" class="leftMid">Occasional Unilateral Carry: </label>
+                        <input type="text" id="occasionalUnilateralCarryWeight" name="occasionalUnilateralCarryWeight" class="centerSmall">
+                        <label for="occasionalUnilateralCarryWeight" class="rightThird">pounds</label>
+                        <input type="text" id="frequentUnilateralCarryHeight" name="frequentUnilateralCarryHeight" class="centerSmall">
+                        <label for="frequentUnilateralCarryHeight" class="rightThird">feet</label>
+                        
+                        <label for="frequentUnilateralCarryWeight" class="leftMid">Frequent Unilateral Carry: </label>
+                        <input type="text" id="frequentUnilateralCarryWeight" name="frequentUnilateralCarryWeight" class="centerSmall">
+                        <label for="frequentUnilateralCarryWeight" class="rightThird">pounds</label>
+                        <input type="text" id="frequentUnilateralCarryHeight" name="frequentUnilateralCarryHeight" class="centerSmall">
+                        <label for="frequentUnilateralCarryHeight" class="rightThird">feet</label>
+                        
+                        <label for="constantUnilateralCarryWeight" class="leftMid">Constant Bilateral Carry: </label>
+                        <input type="text" id="constantUnilateralCarryWeight" name="constantUnilateralCarryWeight" class="centerSmall">
+                        <label for="constantUnilateralCarryWeight" class="rightThird">pounds</label>
+                        
+                        <h4>Push</h4><br>
+                        <label for="occasionalPushWeight" class="leftMid">Occasional Push: </label>
+                        <input type="text" id="occasionalPushWeight" name="occasionalPushWeight" class="centerSmall">
+                        <label for="occasionalPushWeight" class="rightThird">horizontal force pounds</label>
+                        <input type="text" id="occasionalPushHeight" name="occasionalPushHeight" class="centerSmall">
+                        <label for="occasionalPushHeight" class="rightThird">feet</label>
+                        
+                        <label for="frequentPushWeight" class="leftMid">Frequent Push: </label>
+                        <input type="text" id="frequentPushWeight" name="occasionalPushWeight" class="centerSmall">
+                        <label for="frequentPushWeight" class="rightThird">horizontal force pounds</label>
+                        <input type="text" id="frequentPushHeight" name="frequentPushHeight" class="centerSmall">
+                        <label for="frequentPushHeight" class="rightThird">feet</label>
+                        
+                        <label for="constantPushWeight" class="leftMid">Constant Push: </label>
+                        <input type="text" id="constantPushWeight" name="constantPushWeight" class="centerSmall">
+                        <label for="constantPushWeight" class="rightThird">horizontal force pounds</label>
+                        
+                        <h4>Pull</h4><br>
+                        <label for="occasionalPullWeight" class="leftMid">Occasional Pull: </label>
+                        <input type="text" id="occasionalPullWeight" name="occasionalPullWeight" class="centerSmall">
+                        <label for="occasionalPullWeight" class="rightThird">horizontal force pounds</label>
+                        <input type="text" id="occasionalPullHeight" name="occasionalPullHeight" class="centerSmall">
+                        <label for="occasionalPullHeight" class="rightThird">feet</label>
+                        
+                        <label for="frequentPullWeight" class="leftMid">Frequent Pull: </label>
+                        <input type="text" id="frequentPullWeight" name="frequentPullWeight" class="centerSmall">
+                        <label for="frequentPullWeight" class="rightThird">horizontal force pounds</label>
+                        <input type="text" id="frequentPullHeight" name="frequentPullHeight" class="centerSmall">
+                        <label for="frequentPullHeight" class="rightThird">feet</label>
+                        
+                        <label for="constantPullWeight" class="leftMid">Constant Pull: </label>
+                        <input type="text" id="constantPullWeight" name="constantPullWeight" class="centerSmall">
+                        <label for="constantPullWeight" class="rightThird">horizontal force pounds</label>
+                    </section> <!-- end of rightHalf -->
+                </form>
+                
+                <h4>Unilateral Lift</h4><br>
+                <label for="occasionalUnilateralLift" class="leftMid">Occasional Unilateral lift: </label>
+                <input type="text" id="occasionalUnilateralLift" name="occasionalUnilateralLift" class="centerSmall">
+                <label for="occasionalUnilateralLift" class="rightThird">pounds&emsp;</label>
+                <label for="occasionalUnilateralLiftFrom" class="rightThird">&emsp;From</label>
+                <input type="text" id="occasionalUnilateralLiftFrom" name="occasionalUnilateralLiftFrom" class="center">
+                <label for="occasionalUnilateralLiftTo">&emsp;To:</label>
+                <input type="text" id="occasionalUnilateralLiftTo" name="occasionalUnilateralLiftTo" class="center"><br>
+                
+                <label for="frequentUnilateralLift" class="leftMid">Frequent Unilateral lift: </label>
+                <input type="text" id="frequentUnilateralLift" name="frequentUnilateralLift" class="centerSmall">
+                <label for="frequentUnilateralLift" class="rightThird">pounds&emsp;</label>
+                <label for="frequentUnilateralLiftFrom" class="rightThird">&emsp;From</label>
+                <input type="text" id="frequentUnilateralLiftFrom" name="frequentUnilateralLiftFrom" class="center">
+                <label for="frequentUnilateralLiftTo">&emsp;To:</label>
+                <input type="text" id="frequentUnilateralLiftTo" name="frequentUnilateralLiftTo" class="center"><br>
+                
+                <label for="ConstantUnilateralLift" class="leftMid">Constant Unilateral lift: </label>
+                <input type="text" id="ConstantUnilateralLift" name="ConstantUnilateralLift" class="centerSmall">
+                <label for="ConstantUnilateralLift" class="rightThird">pounds&emsp;</label>
+                <label for="ConstantUnilateralLiftFrom" class="rightThird">&emsp;From</label>
+                <input type="text" id="ConstantUnilateralLiftFrom" name="ConstantUnilateralLiftFrom" class="center">
+                <label for="ConstantUnilateralLiftTo">&emsp;To:</label>
+                <input type="text" id="ConstantUnilateralLiftTo" name="ConstantUnilateralLiftTo" class="center">
+                
             </section> <!-- end of Material handling -->
             
             <section id="Positional Tolerances">
